@@ -5,13 +5,19 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine("Would you like to play/lower game? (Yes/No)");
+        Console.WriteLine("Would you like to pick a number? (Yes/No)");
         string startGame = Console.ReadLine();
         if (startGame == "Yes" || startGame == "yes") 
         {
             GamePlay(0, 101);
         }
- 
+        else
+        {
+            Random random = new Random();
+            int generatedNumber= random.Next(1, 101);
+            ReverseGamePlay(generatedNumber);
+        }
+    
     }
 
     public static void GamePlay(int min, int max) {
@@ -41,4 +47,56 @@ public class Program
             GamePlay(min, max);
         }
     }
+
+    public static void ReverseGamePlay(int generatedNumber)
+    {
+    Console.WriteLine("Please guess my number.");
+    string stringUserGuess = Console.ReadLine();
+    bool checker = true;
+    foreach (char c in stringUserGuess)
+    {
+        if (c < '0' || c > '9')
+        {
+            checker = false;
+        }
+    }
+    if (checker)
+    {
+        int userGuess = int.Parse(stringUserGuess);
+        if (userGuess == generatedNumber) 
+        {
+            Console.WriteLine("Congrats! You guessed my number");
+        }
+        else if (userGuess < generatedNumber)
+        {
+            Console.WriteLine("Higher");
+            ReverseGamePlay(generatedNumber);
+        }
+        else if (userGuess > generatedNumber)
+        {
+            Console.WriteLine("Lower");
+            ReverseGamePlay(generatedNumber);
+            }
+        else{
+            Console.WriteLine("How did you get here?!"); 
+            ReverseGamePlay(generatedNumber);
+            }
+    }
+    else {
+        Console.WriteLine("Please enter a number.");
+        ReverseGamePlay(generatedNumber);
+    }
+    }
+// private bool DigitChecker(string input) {
+//     foreach (char c in input)
+//     {
+//         if (c < 0 || c > 9)
+//         {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+
 }
