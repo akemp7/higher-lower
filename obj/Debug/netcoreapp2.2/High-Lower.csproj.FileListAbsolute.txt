@@ -1,0 +1,11 @@
+/Users/Guest/Desktop/higher-lower/obj/Debug/netcoreapp2.2/High-Lower.csprojAssemblyReference.cache
+/Users/Guest/Desktop/higher-lower/obj/Debug/netcoreapp2.2/High-Lower.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/higher-lower/obj/Debug/netcoreapp2.2/High-Lower.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/higher-lower/obj/Debug/netcoreapp2.2/High-Lower.AssemblyInfo.cs
+/Users/Guest/Desktop/higher-lower/bin/Debug/netcoreapp2.2/High-Lower.deps.json
+/Users/Guest/Desktop/higher-lower/bin/Debug/netcoreapp2.2/High-Lower.runtimeconfig.json
+/Users/Guest/Desktop/higher-lower/bin/Debug/netcoreapp2.2/High-Lower.runtimeconfig.dev.json
+/Users/Guest/Desktop/higher-lower/bin/Debug/netcoreapp2.2/High-Lower.dll
+/Users/Guest/Desktop/higher-lower/bin/Debug/netcoreapp2.2/High-Lower.pdb
+/Users/Guest/Desktop/higher-lower/obj/Debug/netcoreapp2.2/High-Lower.dll
+/Users/Guest/Desktop/higher-lower/obj/Debug/netcoreapp2.2/High-Lower.pdb
